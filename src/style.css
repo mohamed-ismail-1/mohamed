@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: #f8fafc; color: #111827; }
+
+
+.navbar-brand { color: #111827; }
+.navbar .nav-link { color: #374151; }
+
+
+.hero { padding-top: 60px; padding-bottom: 60px; }
+.hero .profile-img { width: 240px; height: 240px; object-fit: cover; }
+.hero-card { background: #fff; border-radius: 12px; box-shadow: 0 6px 20px rgba(16, 24, 40, 0.06); }
+
+
+.section { padding: 60px 0; }
+.badge { font-weight: 500; }
+
+
+.card { border: none; border-radius: 12px; }
+
+
+.btn-primary { background-color: #4f46e5; border-color: #4f46e5; }
+.btn-outline-primary { color: #4f46e5; border-color: #4f46e5; }
+
+
+@media (max-width: 768px) {
+.hero { padding-top: 30px; padding-bottom: 30px; }
+}
