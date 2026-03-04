@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="row w-100">
           <div className="col-md-7 d-flex flex-column justify-content-center">
             <h1 className="display-5 fw-bold">
-              Hi, I'm Mohamed <span className="text-primary">Fullstack Developer</span>
+              Hi, I'm Mohamed Ismail<span className="text-primary">Fullstack Developer</span>
             </h1>
             <p className="lead text-muted">
               Java Full Stack Developer & Trainer — Building modern web apps with

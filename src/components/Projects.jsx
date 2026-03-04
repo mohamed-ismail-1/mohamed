@@ -46,6 +46,7 @@ export default function Projects() {
       desc: "This portfolio built with React + Bootstrap",
       stack: ["React", "Bootstrap"],
     },
+    
   ];
 
   return (
