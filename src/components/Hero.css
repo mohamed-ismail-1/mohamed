@@ -1,0 +1,233 @@
+/* ===== HERO SECTION ===== */
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fbff, #eaf3ff);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated Gradient Text */
+.text-gradient {
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Title Animation */
+.hero-title {
+  font-size: 3rem;
+  animation: fadeSlide 1s ease-in-out;
+}
+
+/* Profile Card */
+.profile-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(13, 110, 253, 0.25);
+}
+
+/* Profile Image */
+.profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #0d6efd;
+  transition: 0.4s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.08);
+}
+
+/* Buttons */
+.btn-custom {
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn-custom:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(13, 110, 253, 0.4);
+}
+
+.btn-custom-outline {
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: 0.3s ease;
+}
+
+.btn-custom-outline:hover {
+  background: #0d6efd;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Fade Slide Animation */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ============================= */
+/* 🔥 LOOP BACKGROUND ANIMATION */
+/* ============================= */
+
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #eef2ff, #e0f2fe, #f0f9ff, #e9d5ff);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ============================= */
+/* ✨ FLOATING CARD LOOP */
+/* ============================= */
+
+.profile-card {
+  animation: floatCard 4s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ============================= */
+/* 🖼 PROFILE IMAGE SOFT ROTATE LOOP */
+/* ============================= */
+
+.profile-img {
+  animation: imageFloat 5s ease-in-out infinite;
+}
+
+@keyframes imageFloat {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+/* ============================= */
+/* 🌈 MOVING GRADIENT TEXT LOOP */
+/* ============================= */
+
+.text-gradient {
+  background: linear-gradient(90deg, #2563eb, #7c3aed, #2563eb);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textShine 4s linear infinite;
+}
+
+@keyframes textShine {
+  to { background-position: 200% center; }
+}
+
+/* ============================= */
+/* 💎 BUTTON PULSE LOOP */
+/* ============================= */
+
+.btn-primary {
+  animation: pulseGlow 2.5s infinite;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 99, 235, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+  }
+}
+
+
+/* =============================== */
+/* 🔥 3D IMAGE CARD DESIGN */
+/* =============================== */
+
+.image-card-wrapper {
+  perspective: 1200px;
+  display: inline-block;
+}
+
+.image-card {
+  position: relative;
+  width: 320px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.15),
+    0 40px 80px rgba(0, 0, 0, 0.1);
+  animation: floatCard 5s ease-in-out infinite;
+}
+
+/* 3D Hover Tilt */
+.image-card:hover {
+  transform: rotateY(12deg) rotateX(6deg) scale(1.05);
+}
+
+/* Profile Image */
+.card-profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+/* Slight zoom on hover */
+.image-card:hover .card-profile-img {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.2),
+    transparent
+  );
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+/* Floating Loop Animation */
+@keyframes floatCard {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
